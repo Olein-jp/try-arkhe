@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*
+Template: arkhe
+Theme Name: Try Arkhe
+Description: Try Arkhe用子テーマ
+Version: 1.0.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+/*--------------------------------------------------------------
+    action hook point
+--------------------------------------------------------------*/
+.c-ta-action-hook-point {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ffa05d, #f54040);
+  color: white; }
+
+@media (max-width: 999px) {
+  .p-arkhe_header_left_content,
+  .p-arkhe_header_right_content {
+    display: none; } }
+.p-arkhe_before_header,
+.p-arkhe_before_sidebar_content {
+  margin-top: 0; }
+
+.p-arkhe_after_footer {
+  margin-bottom: 0; }
+
+.p-arkhe_start_footer_inner,
+.p-arkhe_start_footer_foot_content,
+.p-arkhe_before_copyright,
+.p-arkhe_after_copyright,
+.p-arkhe_start_drawer_body,
+.p-arkhe_after_drawer_nav,
+.p-arkhe_end_drawer_body {
+  color: white !important; }
+
+/*--------------------------------------------------------------
+    widget area
+--------------------------------------------------------------*/
+.c-widget-area-point {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(135deg, #cccccc, #f4f4f4);
+  color: #777777; }
+
+/*--------------------------------------------------------------
+    search hook by google
+--------------------------------------------------------------*/
+.p-search-hook-by-google-button {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  margin: 15px 0;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  background-color: #206c9b;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #2375A8), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #2375A8), color-stop(0.75, #2375A8), color-stop(0.75, transparent), to(transparent));
+  -webkit-background-size: 14px 14px; }
+
+/*--------------------------------------------------------------
+    animation
+--------------------------------------------------------------*/
+@keyframes blink {
+  0% {
+    opacity: .75; }
+  100% {
+    opacity: 1; } }
+/*--------------------------------------------------------------
+    common
+--------------------------------------------------------------*/
+.c-blinking {
+  animation: blink 1s ease-in-out infinite alternate; }
+
+/*# sourceMappingURL=style.css.map */
