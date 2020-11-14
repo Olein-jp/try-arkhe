@@ -612,3 +612,17 @@ add_action(
 	1,
 	1
 );
+
+/**
+ * お問い合わせCTA
+ */
+add_action(
+	'arkhe_after_entry_content',
+	function() {
+			?>
+			<a class="p-post-bottom-contact-button" href="<?php echo esc_url( home_url( '/contact' ) ); ?>" target="_blank">情報が間違っている/管理者への問い合わせはこちらから</a>
+		<?php
+	},
+	2,
+	1
+);

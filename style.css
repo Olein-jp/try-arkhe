@@ -74,6 +74,23 @@ License URI: http://www.gnu.org/licenses/gpl.html
   -webkit-background-size: 14px 14px; }
 
 /*--------------------------------------------------------------
+    contact CTA
+--------------------------------------------------------------*/
+.p-post-bottom-contact-button {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f4f24a;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #F5F358), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #F5F358), color-stop(0.75, #F5F358), color-stop(0.75, transparent), to(transparent));
+  -webkit-background-size: 14px 14px; }
+
+/*--------------------------------------------------------------
     animation
 --------------------------------------------------------------*/
 @keyframes blink {

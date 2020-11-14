@@ -93,6 +93,25 @@ $brand-color-3: #2375A8;
 }
 
 /*--------------------------------------------------------------
+    contact CTA
+--------------------------------------------------------------*/
+.p-post-bottom-contact-button {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: darken( $brand-color-2, 3% );
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, $brand-color-2), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, $brand-color-2),color-stop(.75, $brand-color-2), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 14px 14px;
+}
+
+/*--------------------------------------------------------------
     animation
 --------------------------------------------------------------*/
 @keyframes blink{
