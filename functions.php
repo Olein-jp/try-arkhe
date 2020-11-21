@@ -318,16 +318,15 @@ add_action(
 
 /**
  * arkhe_page_subtitle
+ * changed to Filter hook from Action hook by 0.7.6
  */
-add_action(
+add_filter(
 	'arkhe_page_subtitle',
-	function( $the_id, $position ) {
+	function() {
 		?>
-		<a class="c-ta-action-hook-point p-arkhe_page_subtitle c-blinking" href="<?php echo esc_url( home_url( '/arkhe_page_subtitle' ) ); ?>" role="button">arkhe_page_subtitle / このページの記事IDは<?php echo esc_attr( $the_id ); ?>です</a>
+		<a class="c-ta-action-hook-point p-arkhe_page_subtitle c-blinking" href="<?php echo esc_url( home_url( '/arkhe_page_subtitle' ) ); ?>" role="button">arkhe_page_subtitle</a>
 		<?php
-	},
-	10,
-	2
+	}
 );
 
 /**
