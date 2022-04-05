@@ -15,10 +15,13 @@ define( 'ARKHE_CHILD_URI', get_stylesheet_directory_uri() );
 /**
  * style.css 読み込み
  */
-add_action( 'wp_enqueue_scripts', function() {
-	$time_stamp = date('mdgis');
-	wp_enqueue_style( 'arkhe-child-style', ARKHE_CHILD_URI . '/style.css', [], $time_stamp );
-} );
+add_action(
+	'wp_enqueue_scripts',
+	function() {
+		$time_stamp = date( 'mdgis' );
+		wp_enqueue_style( 'arkhe-child-style', ARKHE_CHILD_URI . '/build/css/style.css', [], $time_stamp );
+	}
+);
 
 /**
  * arkhe_before_header
@@ -266,7 +269,7 @@ add_action(
 add_action(
 	'arkhe_start_page_main_content',
 	function( $the_id ) {
-			?>
+		?>
 			<a class="c-ta-action-hook-point p-arkhe_start_page_main_content c-blinking" href="<?php echo esc_url( home_url( '/arkhe_start_page_main_content' ) ); ?>" role="button">arkhe_start_page_main_content / このページの記事IDは<?php echo esc_attr( $the_id ); ?>です</a>
 		<?php
 	},
@@ -604,9 +607,10 @@ add_action(
 		global $post;
 		$slug = $post->post_name;
 		if ( in_category( 'action-hook' ) || in_category( 'filter-hook' ) ) {
-		?>
+			?>
 		<a class="p-search-hook-by-google-button" href="https://www.google.com/search?q=<?php echo $slug; ?>" target="_blank">「<?php echo $slug; ?>」をGoogleで検索する</a>
-		<?php }
+			<?php
+		}
 	},
 	1,
 	1
@@ -618,7 +622,7 @@ add_action(
 add_action(
 	'arkhe_after_entry_content',
 	function() {
-			?>
+		?>
 			<a class="p-post-bottom-contact-button" href="<?php echo esc_url( home_url( '/contact' ) ); ?>">情報が間違っている/管理者への問い合わせはこちらから</a>
 		<?php
 	},
